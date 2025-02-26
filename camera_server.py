@@ -7,7 +7,6 @@ import numpy as np
 import time
 
 # Load environment variables first
-load_dotenv()
 app = Flask(__name__)
 # Initialize Picamera2
 picam2 = Picamera2()
