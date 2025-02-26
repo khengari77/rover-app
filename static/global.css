@@ -1,0 +1,77 @@
+html {
+    display: inline-block;
+    text-align: center;
+    font-family: sans-serif;
+}
+body {
+    background-image: -webkit-linear-gradient(#3F424F, #1E212E);
+    font-family: "roboto",helt "sans-serif";
+    font-weight: lighter;
+    background-position: center 0;
+    background-attachment: fixed;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+}
+main {
+    width: 960px;
+    margin: auto;
+}
+section {
+  margin: 40px 0;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px){
+    body{font-size: 16px;}
+    main {
+        width: 100%;
+    }
+    .for-move {
+        display: block;
+    }
+    /* .controlor-c > div{width: 600px;height: 600px;}
+    .cc-btn{width: 200px;height: 200px;} */
+    .json-cmd-info{display: block;}
+    .json-cmd-info p span{display: inline;}
+    .json-cmd-info > div{
+        display: flex;
+        width: auto;
+        padding: 20px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .control-speed > div{width: 600px;}
+    section{margin: 20px 0;}
+}
+
+@media screen and (min-width: 360px) and (max-width: 767px){
+    main {
+        width: 100%;
+    }
+    .for-move {
+        display: block;
+    }
+    .json-cmd-info{display: block;}
+    .json-cmd-info p span{display: inline;}
+    .json-cmd-info > div{
+        display: flex;
+        width: auto;
+        padding: 20px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    section{margin: 10px 0;}
+    .info-box{margin: 10px auto;}
+    .info-device-box .info-box{padding: 10px;}
+    .num-box-mid div{margin: 10px 0;}
+    .controlor-c > div{
+        width: 270px;
+        height: 270px;
+    }
+    .cc-btn{
+        width: 90px;
+        height: 90px;;
+    }
+    .big-num{font-size: 2em;}
+    .controlor > div{margin: 40px 0;}
+}
+
