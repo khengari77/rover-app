@@ -71,6 +71,7 @@ def process_frames():
             if processed is not None:
                 with depth_lock:
                     latest_depth_frame = processed
+    time.sleep(10)
 def generate_stream(stream_type):
     while True:
         frame = None
