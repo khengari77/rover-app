@@ -56,6 +56,7 @@ const sendCommand = async (command) => {
   let angle = Math.atan2(command.x, command.y) * 180 / Math.PI;
   if (Math.abs(angle) > 90) {
     angle = (angle % 90) - (Math.sign(angle) * 90)
+    speed *= -1
   }
   response = await fetch('/api/command', {
     method: 'POST',
