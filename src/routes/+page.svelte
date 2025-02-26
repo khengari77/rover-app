@@ -7,22 +7,11 @@ let loading = false;
 let error = null;
 let pollInterval = 5000; // 5 seconds
 
-const isAPIReachable = async () => {
-    try {
-        const headResponse = await fetch('/api/update', { method: 'HEAD', signal: AbortSignal.timeout(3000) });
-        return headResponse.ok;
-    } catch (err) {
-        console.error('HEAD check failed:', err);
-        return false;
-    }
-};
+
+
 
 const fetchData = async () => {
     try {
-        if (!(await isAPIReachable())) {
-            error = 'API is not accessible';
-            return;
-        }
         loading = true;
         error = null;
         const response = await fetch('/api/update');
