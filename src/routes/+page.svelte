@@ -1,5 +1,6 @@
 <script>
 import AnalogStick from '$lib/AnalogStick.svelte'
+import DepthCapture from '$lib/DepthCapture.svelte'
 import { onMount, onDestroy } from 'svelte'
 
 let jsonData = null;
@@ -83,7 +84,7 @@ const sendCommand = async (command) => {
 
     <div class="panel left-bottom">
         <div class="image-holder">
-            <img src="api/depth" alt="📷 Depth feed">
+            <DepthCapture />
         </div>
     </div>
     
