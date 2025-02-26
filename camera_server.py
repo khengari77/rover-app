@@ -33,9 +33,6 @@ def generate_stream(stream_type):
         if stream_type == 'video':
             with frame_lock:
                 frame = latest_frame
-        elif stream_type == 'depth':
-            with depth_lock:
-                frame = latest_depth_frame
         
         if frame is not None:
             ret, jpeg = cv2.imencode('.jpg', frame)
