@@ -101,8 +101,8 @@ if __name__ == '__main__':
     capture_thread.daemon = True
     capture_thread.start()
     # Start depth processing thread
-    process_thread = threading.Thread(target=process_frames)
-    process_thread.daemon = True
-    process_thread.start()
+#    process_thread = threading.Thread(target=process_frames)
+#    process_thread.daemon = True
+#    process_thread.start()
     # Start Flask app
     app.run(host='0.0.0.0', port=5000, threaded=True)
